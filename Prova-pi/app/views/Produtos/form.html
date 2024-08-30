@@ -1,0 +1,37 @@
+#{extends 'main.html' /}
+#{set title:'Home' /}
+
+
+<h1>Informe oque é pedido:</h1>
+
+<form action="@{Produtos.salvar}"> 
+         
+         <label for=name>Nome:</label>
+         <input type="text" name="produto.nome">
+</br>
+         <label for=preco>Preço:</label>
+         <input type="number" name="produto.preco">
+</br>         
+         <label for=quantidade>Quantidade:</label>
+         <input type="number" name="produto.quantidade">
+</br>
+         <label for=categoria>Categoria:</label>
+</br>         
+         <input type="radio" name="produto.categoria" value="Armazenamento">
+         <label>Armazenamento</label>
+</br>
+         <input type="radio" name="produto.categoria" value="Hardware">
+         <label>Hardware</label>
+</br>         
+         <input type="radio" name="produto.categoria" value="Computadores">
+         <label>Computadores</label>
+</br>
+         <input type="radio" name="produto.categoria" value="Software">
+         <label>Softwares</label>
+</br>
+
+         <input type="submit">
+         
+
+</form>
+
